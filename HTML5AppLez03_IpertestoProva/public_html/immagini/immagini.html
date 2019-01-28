@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Ipertesto Immagini</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <div>Ipertesto Immagini</div><br/>
+        <a href="../index.html">Torna all'indice!</a><br/><br/>
+        
+         <div>Visualizzazione di un'immagine</div><br/>
+        <!--per caricare un'immagine il tag che si usa è img che si chiude subito
+        se devo modificare la misura uso tag width=""-->
+        <img src="gennaio.jpeg" width="200"/> <br/>
+        <img src="gennaio.jpeg" width="400" height="250"/> <br/>
+        <img src="gennaio.jpeg" width="700" height="450"/> <br/>
+        
+    <picture>
+        <source media="(min-width: 800px)" srcset="luglio.jpeg">
+        <source media="(min-width: 600px)" srcset="giugno.jpeg">
+        <source media="(min-width: 200px)" srcset="settembre.jpeg">        
+        <img src="agosto.jpeg" alt="paesaggio" title="paesaggio">
+    </picture>
+    
+    </body>
+</html>

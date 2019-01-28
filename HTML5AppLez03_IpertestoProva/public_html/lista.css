@@ -1,0 +1,41 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 21-gen-2019, 14.23.24
+    Author     : tss
+*/
+a{
+    background-color: yellow;
+    color: blue;    
+}
+
+a:active{
+    border-radius: 20px;
+    border: solid 1px magenta;
+}
+
+ol li:active{
+    border-radius: 20px;
+    border: solid 1px magenta;    
+}
+ol li:hover{
+    background-color: greenyellow;
+    color: red;       
+}
+ol li {
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 30px;
+    width: 50%;
+    max-width: 300px;
+    min-width: 100px;
+    border: solid 1px red;
+    overflow: visible;
+    margin: 20px;
+    padding: 20px;
+    text-align: center;
+
+}

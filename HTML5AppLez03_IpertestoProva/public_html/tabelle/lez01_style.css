@@ -1,0 +1,60 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 21-gen-2019, 14.50.12
+    Author     : tss
+*/
+
+table.scacchiera td {
+    border: solid 1px green;
+    border-collapse: collapse;
+    display: inline-block
+}
+
+td {
+    border: solid 1px black;
+    width: 30px;
+    height: 30px;
+    font-weight: bold;
+    color:  blue;
+    text-align: center;
+    cursor: pointer;
+}
+
+td:hover {
+    background-color: yellowgreen;
+    border-radius: 50%;
+}
+
+table:nth-child(1) td:hover {
+    background-color:blue;
+    border-radius: 50%;
+}
+
+table tr:nth-child(2n+1) td:nth-child(2n),
+table tr:nth-child(2n) td:nth-child(2n+1) {
+    background-color: gray;
+}
+
+#blocco1{
+    width: 400px;
+    height: 160px;
+    border: solid 1px red;
+    background-color: blue;
+    border-radius: 20px;
+    box-shadow: 10px 10px 10px green;
+    
+}
+#blocco2{
+    width: 150px;
+    height: 150px;
+    border: solid 1px red;
+    background-color: blue;
+    margin: 10px;
+    border-radius: 50%;
+    box-shadow: 10px 10px 10px green;
+    
+}
