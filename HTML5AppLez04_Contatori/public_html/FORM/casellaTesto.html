@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>FORM o caselle di testo</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="casellaTesto.css" rel="stylesheet" type="text/css"/>
+    </head>
+    <body>
+        <h1>FORM</h1><br/>
+        <form>
+            <div>
+                <label for="nome">Nome: </label>
+                <input id="in_nome" name="nome" 
+                       type="text" 
+                       placeholder="ins.nome" 
+                       value="Rossana">
+            </div><br/>
+            <div>
+                <label for="cognome">Cognome: </label> 
+                <input id="in_cognome" name="cognome" 
+                       type="text" 
+                       placeholder="ins.cognome" 
+                       value="Massone">
+            </div><br/>
+
+            <div>
+                <label for="pw">Password: </label>
+                <input id="in_pw" name="pw"
+                       type="password"
+                       placeholder="ins.password"
+                       maxlength="6">
+            </div><br/>
+            <!--type="checkbox" fa si che si veda il riquadro che si possa spuntare -->
+            <div>
+                <label for="nuoto">Nuoto</label>
+                <input type="checkbox"
+                       name="nuoto" id="in_nuoto"
+                       value=""
+                       title="nuoto">
+            </div><br/>
+
+            <div>
+                <label for="tennis">Tennis</label>
+                <input type="checkbox"
+                       name="tennis" id="in_tennis"
+                       value=""
+                       title="tennis">
+            </div><br/>
+
+            <div>
+                <label for="judo">Judo</label>
+                <input type="checkbox"
+                       name="judo" id="in_judo"
+                       value=""
+                       title="judo"
+                       checked=""
+                       disabled="">
+            </div><br/>
+
+            <div>
+                <label for="sesso_m">Maschio</label>
+                <input type="radio"
+                       name="sesso" id="sesso_m"
+                       value="m"
+                       title="maschio">
+            </div>
+            <div>
+                <label for="sesso_f">Femmina</label>
+                <input type="radio"
+                       name="sesso" id="sesso_f"
+                       value="f"
+                       title="femmina"
+                       checked="">
+            </div><br/>
+
+            <div>
+                <label for="sede">Sede</label>
+                <select id="sede">
+                    <option value="sede1">Cuneo</option>
+                    <option value="sede2">Torino</option>
+                    <option value="sede3">Vercelli</option>
+                    <option value="sede4">Novara</option>
+                    <option value="sede5">Asti</option>                    
+                </select>               
+            </div>
+
+        </form>
+    </body>
+</html>

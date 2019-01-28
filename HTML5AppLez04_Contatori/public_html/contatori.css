@@ -1,0 +1,23 @@
+body{
+    counter-reset: contaDiv 0;
+}
+
+div{
+    counter-increment: contaDiv 1;   
+    
+}
+
+
+div:after{
+    content: ''counter(contaDiv,upper-roman)'';
+}
+
+div:before{
+    content: '['counter(contaDiv,lower-alpha)']';
+    padding-right: 10px;
+}
+
+/*le modalità per far vedere il counter come deve essere sono molte,
+tra cui:
+lower-greek, decimal-leading-zero, lower-roman*/
+
