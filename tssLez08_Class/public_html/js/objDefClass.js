@@ -124,10 +124,11 @@ class Campionato {
         let i = 0;
         this.el_partite.forEach(
                 function (myp) {
-                    elp += "<option value='" + i + "'>" + myp.data + " - " + myp.sq1 + " vs " + myp.sq2 + "</option>";
+                    elp += "<option value='" + i + "'>" + myp.data + " - " + myp.sq1 + " vs " + myp.sq2
+                            + " ris. " + myp.pt1 + " - " + myp.pt2 + "</option>";
                     i++;
                 });
-        ris = "<select onchange='selPartita()' size='10' multiple id='s_partite'>" + elp + "</select>";
+        ris = "<select size='10' id='s_partite'>" + elp + "</select>";
         return ris;
     }
 }
@@ -177,8 +178,8 @@ class Partita {
         this.sq1 = sq1;
         this.sq2 = sq2;
         this.ref = ref;
-        this.pt1 = 0;
-        this.pt2 = 0;
+        this.pt1 = "-";
+        this.pt2 = "-";
         this.risultato = "da giocare";
     }
     dammiRisultato() {

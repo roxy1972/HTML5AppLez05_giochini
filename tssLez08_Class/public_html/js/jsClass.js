@@ -3,13 +3,13 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-
+var lega;
 //prima parte definizione anagrafica con classi e sottoClassi
 function init(){
 //creo la lega
-const lega = new Lega("IFL", "campionato italiano di football americano");
+lega = new Lega("IFL", "campionato italiano di football americano");
 //mi dichiaro un arbitro
-var arbitro = new Arbitro("Rossana Massone", "19", "34821455475", "f", "junior");
+let arbitro = new Arbitro("Rossana Massone", "19", "34821455475", "f", "junior");
 lega.aggiungiRef(arbitro);
 // creo giocatori e squadre
 var sq = new Team("Mastini Canavese", "Ivrea", "bianco e grigio", "Seconda Divisione");
@@ -69,8 +69,8 @@ function addRisultato(){
     let camp=lega.el_campionati[0];
     let part= camp.el_partite[indexP];
     part.pt1=pt1;
-    part.pt2=pt2;
-    
+    part.pt2=pt2; 
+    document.getElementById("d_ris").innerHTML=lega.el_campionati[0].visPartite();
     
 }
 
