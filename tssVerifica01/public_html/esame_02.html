@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="js/verifica_02.js" type="text/javascript"></script>
+
+    </head>
+    <div id="login">
+        <h2>TEST</h2>
+        <input type="text" id="in_txt1" placeholder="ins.risposta 1"/>
+        <input style="color: red; background-color: yellow; border: solid 1px blue" id="in_pt1"/><br>
+        <input type="text" id="in_txt2" placeholder="ins.risposta 2"/>
+        <input style="color: red; background-color: yellow; border: solid 1px blue" id="in_pt2"/><br>
+        <input type="text" id="in_txt3" placeholder="ins.risposta 3"/>
+        <input style="color: red; background-color: yellow; border: solid 1px blue" id="in_pt3"/><br>
+        <input type="text" id="in_txt4" placeholder="ins.risposta 4"/>
+        <input style="color: red; background-color: yellow; border: solid 1px blue" id="in_pt4"/><br>
+        <button onclick="inviaTest()">Invia Test</button>     
+        <div>Totale punteggio: <span id="sp_punt"> </span></div> 
+        <div>Esito: <span id="sp_esito"> </span></div>
+    </div>
+
+    <hr><br/><br/>
+
+    <input type="number" id="moneta" value="" placeholder=""/> 
+    <button id="bt_metti" onclick="mettiMoneta()">Metti moneta</button>
+    <button id="bt_prendi" onclick="prendiMoneta()">Prendi moneta</button>
+    <div id="div_tot">Totale: <span id="sp_totale">0</span></div><br/>
+
+</html>
